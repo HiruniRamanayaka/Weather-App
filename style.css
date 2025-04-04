@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    min-height: 95%; /* Use min-height so it grows with content */
+    height: auto; /* Ensure height adjusts automatically */
+    text-align: center;
+    background-image: url("https://img.freepik.com/free-vector/realistic-background-monsoon-season_23-2150428848.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    margin-bottom: 30px;
+    text-align: left;
+    margin-left: 20px;
+    color: rgb(17, 29, 189);
+    font-size: 50px;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-left: 40px;
+}
+
+button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#city-name {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    box-shadow: rgb(228, 228, 240);
+}
+
+.current-date {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#first-row, #second-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#icon, #temp {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#icon img {
+    width: 70px; /* Adjust size as needed */
+    height: auto;
+}
+
+.card {
+    background:rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+}
+
+#temp-range, #sun, .card-container{
+    display: flex;
+    gap: 20px;
+}
+
+.vertical-line {
+    width: 2px;
+    background: #ccc;
+    height: 30px;
+    margin: auto;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto; /* Adjust rows to content height */
+    gap: 5px;
+    margin: 10px;
+}
+
+#first-row {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    min-width: 800px;
+}
+
+#second-row {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    min-width: 800px;
+}
+
+#sun {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    min-width: 400px;
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-evenly; /* Space out sunrise and sunset */
+    background-image: url("https://ifdalivestorage.blob.core.windows.net/user-uploads/1093394/c002daf0-fedd-4af6-bf2b-07ffccba58d7");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+h3{
+    margin: 5px;
+}
+
+@media (max-width: 1200px) {
+    .content {
+        display: block; /* Remove the grid layout completely */
+    }
+
+    #first-row, #second-row, #sun {
+        display: block; /* Ensure each section takes up its own line */
+        margin-bottom: 20px; /* Add spacing between sections */
+        width: 100%; /* Make each section span the container width */
+    }
+
+    #second-row {
+        display: flex;
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Weather App</h1>
+            <div class="search">
+                <div class="search-box">
+                    <input type="text" id="city-input" placeholder="Enter city name...">
+                    <button id="search-btn">Search</button>
+                </div>
+                <div class="date">
+                    <h3 class="current-date"></h3>
+                </div>
+            </div>
+            
+            <div id="weather-info" class="hidden">
+                <h2 id="city-name"></h2>
+
+                <div class="content">
+                    <!-- first row -->
+                    <div id="first-row">
+                        <div id="icon" class="card">
+                            <img id="weather-icon" alt="Weather Icon">
+                            <p id="weather-description"></p>
+                        </div>
+
+                        <div id="temp" class="card">
+                            <h2 id="temperature"></h2>
+                            <p>Temperature</p>
+                        </div>
+
+                        <div id="temp-range" class="card">
+                            <div id="max-temp">
+                                <h2 id="temp-max"></h2>
+                                <p>Max Temperature</p>
+                            </div>
+                            <div class="vertical-line"></div>
+                            <div id="min-temp">
+                                <h2 id="temp-min"></h2>
+                                <p>Min Temperature</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- second row -->
+                    <div id="second-row" class="card">
+                        <div id="temp">
+                            <h3 id="speed"></h3>
+                            <h3 id="deg"></h3>
+                            <h3 id="gust"></h3>
+                            <p>Wind</p>
+                        </div>
+                        <div class="vertical-line"></div>
+                        <div id="temp">
+                            <h2 id="pressure"></h2>
+                            <p>Pressure</p>
+                        </div>
+                        <div class="vertical-line"></div>
+                        <div id="temp">
+                            <h2 id="humidity"></h2>
+                            <p>Humidity</p>
+                        </div>
+                        <div class="vertical-line"></div>
+                        <div id="temp">
+                            <h2 id="clouds"></h2>
+                            <p>Cloudines</p>
+                        </div>
+                    </div>
+
+                    <!-- div3 -->
+                    <div id="sun" class="card">
+                        <div id="sunrise">
+                            <p id="sun-rise"></p>
+                        </div>
+                        
+                        <div id="sunset">
+                            <p id="sun-set"></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
