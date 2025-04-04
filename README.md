@@ -23,5 +23,5 @@ A **simple weather application** that fetches real-time weather data based on a 
 [Watch the Demo Video](https://youtu.be/7Y2iiJSJ1XA)
 
 ## **Screenshots**
-[Weather App UI](#) (./Assests/Screenshot.jpg)
+[Weather App UI](./Assests/Screenshot.jpg)
 
