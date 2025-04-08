@@ -20,6 +20,9 @@ A **simple weather application** that fetches real-time weather data based on a 
 4. Enter a city name and get weather updates! 🌎
 
 ## **Live Demo**
+[🔗 View Live Project](#) (https://hiruniramanayaka.github.io/Weather-App/)
+
+## **Live Demo**
 [Watch the Demo Video](https://youtu.be/7Y2iiJSJ1XA)
 
 ## **Screenshots**
